@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #030712;
+}
+
+/* Monaco scrollbars */
+.monaco-editor .scrollbar .slider {
+  background: rgba(255,255,255,0.1) !important;
+  border-radius: 4px;
+}
+
+/* Remote cursor highlights + labels: MonacoEditorPane injects `.remote-cursor-{id}` and uses content widgets. */
